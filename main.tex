@@ -1,0 +1,273 @@
+\documentclass[a4paper, 11pt]{article} % "a4paper", "letterpapper"
+% AUTHOR: AJAY (https://github.com/stlajay) 
+% TEX: PDFLATEX
+% PROJECT: LINKEDIN PROFILE / RESUME
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+
+% WORDS IN RIGHT ORDER
+\usepackage[none]{hyphenat}
+\usepackage[document]{ragged2e}
+
+% TWO COLUMN
+\usepackage{blindtext}
+%\usepackage{xcolor}
+\usepackage[x11names]{xcolor}
+\usepackage{geometry}
+\usepackage[most]{tcolorbox}
+\geometry{margin=0pt}
+
+% COLORS
+\definecolor{SwishLineColour}{HTML}{293E49} 
+
+% GRAY COLOR
+\definecolor{light-grey}{gray}{0.84}
+\definecolor{dark-grey}{gray}{0.4}
+\definecolor{text-grey}{gray}{.09}
+
+\DeclareRobustCommand{\ebseries}{\fontseries{eb}\selectfont}
+\DeclareTextFontCommand{\texteb}{\ebseries}
+
+% COSUTOM UNDERLINE
+\usepackage{contour}
+\usepackage[normalem]{ulem}
+\renewcommand{\ULdepth}{1.8pt}
+\contourlength{0.8pt}
+\newcommand{\myuline}[1]{%
+  \uline{\phantom{#1}}%
+  \llap{\contour{white}{#1}}%
+}
+
+% COUSTOM FONTS: helvetica-style
+%\usepackage{tgheros}
+\usepackage{helvet}
+\renewcommand*\familydefault{\sfdefault} 
+%% Only if the base font of the document is to be sans serif
+\usepackage[T1]{fontenc}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ % CUSTOM NEW COMMANDS
+ \titleformat{\section}{ \Large }{}{}{}[\color{black}]
+ \titleformat{\subsection}{ \large }{}{}{}[\color{black}]
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-1pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-8pt}\item
+      \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \large{#1} & {\color{dark-grey}\small #2}\vspace{1pt}\\ % top row of resume entry
+      \textit{#3} & {\color{dark-grey} \small #4}\\ % second row of resume entry
+    \end{tabular*}\vspace{-4pt}
+}
+
+\newcommand{\resumeEduSubheading}[4]{
+  \vspace{-8pt}\item
+      \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \large{#1} \\ {\color{dark-grey}\small #2}\vspace{1pt} \\% top row of resume entry
+      \textit{#3} {\color{dark-grey} \small #4}\\ % second row of resume entry
+    \end{tabular*}\vspace{-4pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \vspace{-8pt} \item
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+      \large{ #1} & {\color{dark-grey} #2} \\
+    \end{tabular*}\vspace{-4pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+% CHANGED default leftmargin  0.15 in
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeEduSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{0pt}}
+ 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% TWO COLUMN PAGES - 
+\newtcolorbox{bgbox}[1][]{nobeforeafter,top=0.5in,bottom=0.5in, right=0.5cm, 
+left=0.5cm, leftright skip=0pt,boxrule=0pt,enhanced jigsaw,sharp corners,#1}
+
+\title{Résumé}
+
+%%############  RESUME STARTS HERE  ############%%
+
+\begin{document}
+\noindent %%%%%%%%%%%%%% COLUMN ONE STARTS 
+\begin{bgbox}[height=\paperheight,colback=SwishLineColour, coltext=white,
+width=0.33\textwidth,rightrule=1pt,colframe=SwishLineColour]
+
+\section*{Contact}
+\vspace{-8pt}
+\href{tel:+1-0000000000}{+1-000 000 0000} {\color{dark-grey} (phone)} \vspace{2pt} \\
+\href{mailto:name@email.com}{name@email.com} {\color{dark-grey} (email)} \vspace{2pt} \\
+\href{https://www.website.com}{www.website.com} {\color{dark-grey} (website)} \vspace{2pt} \\
+\href{https://www.linkedin.com/in/xxxxxxxxx}{www.linkedin.com/in/xxxxxx} {\color{dark-grey} (linkedin)}
+\vspace{16pt}
+
+
+\section*{Skills}
+\vspace{-8pt}
+\textbf{Languages} {: HTML/CSS, }\vspace{8pt} \\
+\textbf{Technologies}  {: GitHub, Google Analytics, GCP, AWS, Notion, Docker, MongoDB}
+\vspace{16pt}
+
+
+\section*{Certifications}
+\vspace{-8pt}
+\subsection*{Company/University}
+Course Name | Month Year (\href{https://www.coursera.org/}{Link}) \vspace{2pt} \\
+Course Name | Month Year (\href{https://www.udemy.com/}{Link})
+
+\subsection*{Organization}
+Course Name | Month Year (\href{https://www.edx.org/}{Link}) \vspace{2pt} \\
+Course Name | Month Year (\href{https://www.yahoo.com/}{Link})
+\vspace{16pt}
+
+\section*{Achievements}
+\vspace{-8pt}
+  \textbf{Hackathon}  Winner | Month Year (Link) \vspace{8pt} \\
+  \textbf{Scholarship name} Top 20+ | Month Year \vspace{8pt} \\
+  Challenges in \textbf{University/School}. | Month Year \vspace{8pt} \\
+  Contribution to the \textbf{Community}. | Month Year
+\vspace{16pt}
+
+\section*{Revelant Coursework}
+\vspace{-8pt}
+Subject Name \vspace{2pt} \\
+Subject Name \vspace{2pt} \\
+Course Name \vspace{2pt} \\
+Subject Name \vspace{2pt} \\
+Course Name \vspace{2pt} \\
+Subject Name
+% SCHOOL OR UNIVERISTY COURSE/SUBJECT NAME
+
+
+%%%%%%%%%%%%% COLOUMN ONE ENDS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{bgbox} %%%%%%%%%%%%%%%%%%%%%% COLUMN TWO STARTS  %%%%%%%%%%%%%%%%%%%%%%%%
+\begin{bgbox}[height=\paperheight,colback=white,width=0.67\textwidth, left=0.5cm]
+
+\begin{center}
+    \raggedright{\Huge Name Surname} \\ \vspace{5pt}
+    Position/Student \\
+    \color{dark-grey} {\href{https://www.google.com/maps/}{City, State, Country} }
+    \\ \vspace{-16pt} % Create link shortner via https//bit.ly 
+\end{center}
+
+\vspace{-8pt}
+
+\section*{Summary}
+\vspace{-8pt}
+\small{Write something here ....}
+\vspace{-8pt}
+
+%-----------EDUCATION-----------
+\section*{Education}
+  \resumeSubHeadingListStart
+    \resumeEduSubheading
+      {University / College / School Name(s)}{City, State, Country}
+      {Bachelor of Technology, Information Technology}{(Month 20XX -- Month 20XX)}
+        \resumeItemListStart
+          \resumeItem{GPA: \textbf{X.00/10.0} or X.0/4.0}
+      \resumeItemListEnd 
+    \vspace{4pt}
+    \resumeEduSubheading
+      {Previous School Name(s) (Optional)}{City, State, Country}
+      {Secondary Certification / Board Name, {\normalfont Percentage: \textbf{00.0}} }{(Month 20XX)}
+
+  \resumeSubHeadingListEnd
+    \vspace{-22pt}
+
+%-----------EXPERIENCE-----------
+\section*{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Company, {\normalfont \href{https://}{\underline{Link}}} }{Month 20XX -- Month 20XX}
+      {Intern / Position}{City, Country} % "Link" - Certificate/Recognition/Job proof
+      \resumeItemListStart
+        \resumeItem{Write something here .....}
+        \resumeItem{Write something here ....}
+        \resumeItem{Write something here .....}
+
+    \resumeItemListEnd
+    \vspace{4pt}
+
+    \resumeSubheading
+      {Org. / University}{Month 20XX -- Month 20XX}
+      {Intern, {\normalfont Project Name}}{City, Country or Virtual}
+      \resumeItemListStart
+        \resumeItem{Write something here .....}
+        \resumeItem{Write something here .....}
+        \resumeItem{Write something here .....}
+      \resumeItemListEnd
+            
+
+  \resumeSubHeadingListEnd
+    \vspace{-22pt}
+
+%-----------PROJECTS-------------
+\section*{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {Project Name} {Month 20XX}
+          \resumeItemListStart
+            \resumeItem{Write something here ....}
+            \resumeItem{Write something here .....}
+          \resumeItemListEnd
+            \vspace{4pt}
+          
+        \resumeProjectHeading
+          {Project Name}{Month 20XX}
+          \resumeItemListStart
+            \resumeItem{Write something here .....}
+            \resumeItem{Write something here .....}
+          \resumeItemListEnd
+          
+    \resumeSubHeadingListEnd
+            \vspace{-22pt}
+
+%-----------LEADERSHIPS-------------
+\section*{Leadership / Extracurricular / Community Work}
+ \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Org. Name}{Month 20XX}
+      {Work Name}{Position}
+      \resumeItemListStart
+        \resumeItem{Write something here .....}
+        \resumeItem{Write something here .....}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+\end{bgbox}
+%%%%%%%%%%%%%%%  COLUMN TWO ENDS
+\end{document}
