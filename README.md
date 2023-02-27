@@ -2,7 +2,7 @@
 
 ### To use this, download the zip file.
 
-![Alt ](https://github.com/stlajay/profile/blob/master/proflie/zip.png)
+![Alt ](https://github.com/stlajay/profile/blob/master/profile/zip.png)
 
 
 ```txt
@@ -13,7 +13,7 @@ Use Online Latex editor, Go to [Overleaf.com](https://www.overleaf.com/), then s
 
 Start Editing
 
-![Alt ](https://github.com/stlajay/profile/blob/master/proflie/profile.png)
+![Alt ](https://github.com/stlajay/profile/blob/master/profile/profile.png)
 
 
 
